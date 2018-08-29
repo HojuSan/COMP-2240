@@ -11,8 +11,5 @@ import java.util.*;
 
 class FCFS
 {
-    public static doStuff()
-    {
-        // do stuff blah blah blah
-    }
+    
 }

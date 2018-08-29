@@ -10,7 +10,40 @@ import java.io.*;
 
 public class c3244203A1
 {
-    Scanner console = new Scanner(System.in);    
+
+    static Scanner input = new Scanner(System.in);    
+    static Process pro = new Process();
+    static FCFS fcfs = new Fcfs();
+
+    public static void main (String [] args)
+    {
+        int total = 0;
 
 
+        System.out.println("How many process do you wish to evaluate");
+        total = input.nextLine();
+
+        for(int i = 0; i <= total; i++)
+        {
+            addProcess();
+        }
+    }     
+
+    //Adds new process 
+    public static void addProcess()
+	{
+		String id;
+		int execute,arrival;
+		
+		System.out.println("What is the id:");
+		id = input.nextLine();
+		
+		System.out.println("What is the arrival time:");
+		arrival = input.nextInt();
+		
+		System.out.println("What is the execution time:");
+		execute = input.nextInt();
+		
+		pro.addProcess(id,arrival,execute);   		
+	}
 }

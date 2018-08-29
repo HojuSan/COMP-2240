@@ -1,18 +1,43 @@
 class Process {
-       private String ID;
-       private int Arrival;
+    //variables
+    private String id;
+    private int arrival;
+    private int execute;
 
-   // constructor
-   public Employee(String name, int code) {
-      this.ID = name;
-      this.Arrival = code;
-   }
-
-       // getter
-       public String getName() { return name; }
-       public int getCode() { return code; }
-       // setter
-
-       public void setName(String name) { this.name = name; }
-       public void setCode(int code) { this.code = code; }
+    // constructor
+    public Process(String id, int arrival, int execute) 
+    {
+    this.id = id;
+    this.arrival = arrival;
+    this.execute = execute;
     }
+
+    // getter
+    public String getId() 
+    { 
+        return id; 
+    }
+    public int getArrival() 
+    { 
+        return arrival; 
+    }
+
+    public int getExecute()
+    {
+        return execute;
+    }
+
+    // setter
+    public void setName(String id) 
+    {
+        this.id = id; 
+    }
+    public void setCode(int arrival) 
+    {
+        this.arrival = arrival; 
+    }
+    public void setExecute(int execute) 
+    {
+        this.execute = execute;
+    }
+}
