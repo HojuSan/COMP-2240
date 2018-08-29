@@ -1,18 +1,25 @@
-class Process {
+/*.java 
+Assignment 1
+Author:     Juyong Kim
+Student No: c3244203
+Date:       09/08/18
+Description: has all the details about the process
+*/
+public class Process {
     //variables
     private String id;
     private int arrival;
     private int execute;
 
     // constructor
-    public Process(String id, int arrival, int execute) 
+    public Process() 
     {
-        this.id = id;
-        this.arrival = arrival;
-        this.execute = execute;
+        id = "";
+        arrival = 0;
+        execute = 0;
     }
 
-    // getter
+    // getters
     public String getId() 
     { 
         return id; 
@@ -27,12 +34,12 @@ class Process {
         return execute;
     }
 
-    // setter
-    public void setName(String id) 
+    // setters
+    public void setId(String id) 
     {
         this.id = id; 
     }
-    public void setCode(int arrival) 
+    public void setArrival(int arrival) 
     {
         this.arrival = arrival; 
     }

@@ -12,8 +12,11 @@ public class c3244203A1
 {
 
     static Scanner input = new Scanner(System.in);    
-    static Process process = new Process();
     static FCFS fcfs = new FCFS();
+    //static RR rr = new RR();
+    //static FB fb = new FB();
+    //static NRR nrr = new NRR();
+    
 
     public static void main (String [] args)
     {
@@ -44,6 +47,9 @@ public class c3244203A1
 		System.out.println("What is the execution time:");
 		execute = input.nextInt();
 		
-		pro.addProcess(id,arrival,execute);   		
+        fcfs.addProcess(id,arrival,execute);   
+        //rr.addProcess(id,arrival,execute);   
+        //fb.addProcess(id,arrival,execute);   
+		//nrr.addProcess(id,arrival,execute);   		
 	}
 }
