@@ -12,8 +12,8 @@ public class c3244203A1
 {
 
     static Scanner input = new Scanner(System.in);    
-    static Process pro = new Process();
-    static FCFS fcfs = new Fcfs();
+    static Process process = new Process();
+    static FCFS fcfs = new FCFS();
 
     public static void main (String [] args)
     {

@@ -9,7 +9,8 @@ import java.util.*;
 
 //First come first serve
 
-class FCFS
+public class FCFS
 {
-    
+    private Process[] process;
+	private int total;
 }

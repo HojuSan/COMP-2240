@@ -7,9 +7,9 @@ class Process {
     // constructor
     public Process(String id, int arrival, int execute) 
     {
-    this.id = id;
-    this.arrival = arrival;
-    this.execute = execute;
+        this.id = id;
+        this.arrival = arrival;
+        this.execute = execute;
     }
 
     // getter
