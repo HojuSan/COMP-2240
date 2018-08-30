@@ -35,7 +35,7 @@ public class FCFS
 
         for (int i = 0; i <= total; i++)
         {
-            counter += c3244203A1.getDispatcher();
+            counter += c3244203A1.getDis();
 
             System.out.println("T" + counter + ":" + process[i].getId());
         }
@@ -52,7 +52,7 @@ public class FCFS
     {
         if (dis == 0)
         {
-            dis = c3244203A1.getDispatcher();
+            dis = c3244203A1.getDis();
         } 
 
         if (check(id) == 0)
@@ -107,6 +107,6 @@ public class FCFS
             reProcess[i] = process[i];
         }
 
-        process = reprocess;
+        process = reProcess;
     }
 }
