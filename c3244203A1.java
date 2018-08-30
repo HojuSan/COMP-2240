@@ -61,7 +61,7 @@ public class c3244203A1
 		//nrr.addProcess(id,arrival,execute);   		
 	}
 
-    public static void getDispatcher()
+    public static int getDispatcher()
     {
         return dispatcher;
     }

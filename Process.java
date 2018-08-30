@@ -38,11 +38,11 @@ public class Process {
     {
         return execute;
     }
-    public void getTr() 
+    public int getTr() 
     {
         return tr; 
     }
-    public void getWt() 
+    public int getWt() 
     {
         return wt;
     }
