@@ -6,11 +6,19 @@ Date:       09/08/18
 Description: First come first serve
 */
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.List;
+
 public class FCFS
 {
+    //variable for amount of process there will be initially
     final private int MAX = 5;
     private Process[] process;
-	private int total;
+	private int total = 0;
+    private int dis = 0;
+    //not sure why not calling
+    static c3244203A1 a1 = new c3244203A1();
 
     public FCFS()
     {
@@ -18,12 +26,39 @@ public class FCFS
         total = 0;
     }
 
+    public void doStuff()
+    {
+        int counter = 0
+
+        System.out.println("FCFS:");
+
+        for (int i = 0; i <= total; i++)
+        {
+            counter += a1.getDispatcher();
+
+            System.out.println("T", counter, ":", process[i].getId());
+        }
+
+        System.out.println("Process Turnaround Time Waiting Time");
+        for (int i = 0; i <= total; i++)
+        {
+            System.out.println(process[i].getId(), "  ", process[i].getTr()"      ", process[i].getWt());
+        }
+    }
+
+    //Setting the process into a list
     public void addProcess(String id, int arrival, int execute)
     {
+        if (dis == 0)
+        {
+            dis = a1.getDispatcher();
+        } 
+
         if (check(id) == 0)
         {
             process[total] = new Process();
             setProcess(process[total],id,arrival,execute);
+            add(Process process[total]);
             total++;
 
             if(total == process.length)

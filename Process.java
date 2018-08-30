@@ -10,6 +10,10 @@ public class Process {
     private String id;
     private int arrival;
     private int execute;
+    //turnaround time
+    private int tr;
+    //waiting time
+    private int wt;
 
     // constructor
     public Process() 
@@ -17,6 +21,8 @@ public class Process {
         id = "";
         arrival = 0;
         execute = 0;
+        tr = 0;
+        wt = 0;
     }
 
     // getters
@@ -28,10 +34,17 @@ public class Process {
     { 
         return arrival; 
     }
-
     public int getExecute()
     {
         return execute;
+    }
+    public void getTr() 
+    {
+        return tr; 
+    }
+    public void getWt() 
+    {
+        return wt;
     }
 
     // setters
@@ -46,5 +59,13 @@ public class Process {
     public void setExecute(int execute) 
     {
         this.execute = execute;
+    }
+    public void setTr(int tr) 
+    {
+        this.tr = tr; 
+    }
+    public void setWt(int wt) 
+    {
+        this.wt = wt;
     }
 }

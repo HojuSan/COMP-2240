@@ -21,15 +21,23 @@ public class c3244203A1
     public static void main (String [] args)
     {
         int total = 0;
+        int dispatcher = 0;
 
+        //setting dispatcher 
+        System.out.println("Dispatcher runtime?");
+        dispatcher = input.nextint();
 
+        //setting amount of process in usage
         System.out.println("How many process do you wish to evaluate");
-        total = input.nextLine();
+        total = input.nextint();
 
         for(int i = 0; i <= total; i++)
         {
             addProcess();
         }
+
+        
+
     }     
 
     //Adds new process 
@@ -52,4 +60,9 @@ public class c3244203A1
         //fb.addProcess(id,arrival,execute);   
 		//nrr.addProcess(id,arrival,execute);   		
 	}
+
+    public static void getDispatcher()
+    {
+        return dispatcher;
+    }
 }
